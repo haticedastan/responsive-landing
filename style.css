@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background: black;
+    background: rgb(252, 151, 114);
     overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ body{
 .header{
     width: 100%;
     height: 60px;
-    background: #001;
+    background: rgb(252, 151, 114);
 }
 
 .logo{
@@ -50,10 +50,12 @@ ul li a{
     text-decoration: none;
     padding:10px 20px;
     text-transform: uppercase;
+    
 }
 
 ul li a:hover{
-    background: rgb(81, 68, 94);
+    background: rgb(75, 26, 8);
+
 }
 
 .content{
@@ -78,7 +80,8 @@ img{
     position: absolute;
     top: 14%;
     right: 50px;
-    width: 600px;
+    width: 700px;
+    height: 600px;
     display: block;
     object-fit: cover;
     mix-blend-mode: screen;
@@ -112,12 +115,49 @@ img{
 .text a{
     color: blanchedalmond;
     text-decoration: none;
-    background: rgb(228, 213, 208);
+    background: rgb(75, 26, 8);
     padding: 10px 25px;
     display: inline-block;
     margin-top: 15px;
 
 }
 .text a:hover{
-    background: rgb(75, 26, 8);
+    background: rgb(77, 38, 24);
+}
+
+@media(max-width:1150px){
+    ul{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: coral;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .logo{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width:920px){
+    body{
+        overflow: auto;
+    }
+    .box{
+        margin-left: 0;
+        font-size: 80%;
+    }
+    .content{
+        justify-content: center;
+    }
+    .text{
+        
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
 }
