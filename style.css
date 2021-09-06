@@ -7,7 +7,7 @@
 
 body{
     min-height: 100vh;
-    background: rgb(130, 130, 184);
+    background: black;
     overflow: hidden;
 }
 
@@ -53,7 +53,7 @@ ul li a{
 }
 
 ul li a:hover{
-    background: blueviolet;
+    background: rgb(81, 68, 94);
 }
 
 .content{
@@ -79,8 +79,45 @@ img{
     top: 14%;
     right: 50px;
     width: 600px;
-    height: 600px;
     display: block;
     object-fit: cover;
     mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.text{
+    width: 720px;
+    padding: 50px;
+    color: white;
+    position: absolute;
+    background: coral;
+    margin-left: 50px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.text h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.text h3{
+    font-size: 1.5em;
+
+}
+.text p {
+    line-height: 1.5;
+}
+.text a{
+    color: blanchedalmond;
+    text-decoration: none;
+    background: rgb(228, 213, 208);
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 15px;
+
+}
+.text a:hover{
+    background: rgb(75, 26, 8);
 }
